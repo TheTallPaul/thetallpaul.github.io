@@ -20,58 +20,17 @@
     </div>
 
     <style>
-      body {
-        background-color: #fff;
-        padding: 50px;
-        font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #727272;
-        font-weight: 400;
-        margin: 0;
-      }
-
+      /* Minimal reset to avoid conflicts with custom themes */
       .wrapper {
-        width: 860px;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
       }
 
       section {
         width: 100%;
-        float: right;
-        padding-bottom: 50px;
-      }
-
-      @media print, screen and (max-width: 960px) {
-        .wrapper {
-          width: auto;
-          margin: 0;
-        }
-        
-        section {
-          border: 1px solid #e5e5e5;
-          border-width: 1px 0;
-          padding: 20px 0;
-          margin: 0 0 20px;
-        }
-      }
-
-      @media print, screen and (max-width: 720px) {
-        body {
-          word-wrap: break-word;
-          padding: 15px;
-        }
-
-        .wrapper {
-          width: auto;
-          margin: 0;
-        }
-      }
-
-      @media print {
-        body {
-          padding: 0.4in;
-          font-size: 12pt;
-          color: #444;
-        }
+        float: none;
+        padding: 0;
+        margin: 0;
       }
     </style>
   </body>
