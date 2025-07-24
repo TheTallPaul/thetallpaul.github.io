@@ -1,1 +1,173 @@
-Hello World
+---
+layout: default
+---
+
+<div class="homepage">
+  <header class="hero-section">
+    <h1>Welcome to Paul Lantow's Homepage</h1>
+    <p class="tagline">{{ site.description }}</p>
+  </header>
+
+  <section class="photo-gallery">
+    <div class="photo-container">
+      <img
+        src="assets/images/paul_2.jpg"
+        alt="Paul Lantow"
+        class="profile-photo main-photo"
+      />
+      <img
+        src="assets/images/paul_3.jpg"
+        alt="Paul Lantow"
+        class="profile-photo secondary-photo"
+      />
+    </div>
+  </section>
+
+  <section class="bio-section">
+    <h2>About Paul</h2>
+    <div class="bio-content">
+      <p>
+        Welcome! I'm Paul Lantow, and this is my little corner of the internet.
+      </p>
+
+      <p>
+        Feel free to explore and get to know me a bit better. Whether you're
+        here for personal updates, professional information, or just browsing
+        around, I'm glad you stopped by.
+      </p>
+
+      <p>
+        This space will continue to evolve as I share more about my interests,
+        projects, and life updates.
+      </p>
+    </div>
+  </section>
+
+  <section class="navigation-links">
+    <h3>Explore</h3>
+    <ul>
+      <li><a href="/wedding">Wedding Information</a></li>
+    </ul>
+  </section>
+</div>
+
+<style>
+  .homepage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+      sans-serif;
+  }
+
+  .hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero-section h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+  }
+
+  .photo-gallery {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .profile-photo {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .profile-photo:hover {
+    transform: scale(1.05);
+  }
+
+  .main-photo {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .secondary-photo {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .bio-section {
+    margin: 40px 0;
+    line-height: 1.6;
+  }
+
+  .bio-section h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  .bio-content p {
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .navigation-links {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+
+  .navigation-links h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .navigation-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .navigation-links li {
+    margin: 10px 0;
+  }
+
+  .navigation-links a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+
+  .navigation-links a:hover {
+    background-color: #e1f5fe;
+    text-decoration: none;
+  }
+
+  @media (max-width: 600px) {
+    .photo-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-photo,
+    .secondary-photo {
+      max-width: 90%;
+    }
+  }
+</style>
