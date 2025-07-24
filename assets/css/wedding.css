@@ -321,6 +321,7 @@
   height: 250px;
   object-fit: cover;
   transition: all 0.4s ease;
+  display: block;
 }
 
 .photo-item:hover .wedding-photo {
