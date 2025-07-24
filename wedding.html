@@ -1,42 +1,103 @@
 ---
 layout: default
-title: Wedding
+title: Wedding - Paul & Shamita
 permalink: /wedding/
 ---
 
 <div class="wedding-page">
   <header class="wedding-header">
-    <h1>🎉 Wedding Celebration</h1>
-    <p class="wedding-subtitle">Join us for our special day!</p>
+    <div class="mandala-decoration top"></div>
+    <h1>✨ Paul & Shamita ✨</h1>
+    <p class="wedding-subtitle">Join us as we celebrate our love</p>
+    <div class="wedding-date">
+      <span class="date-highlight">June 6th, 2026</span>
+      <span class="location">Marquette, Michigan</span>
+    </div>
+    <div class="mandala-decoration bottom"></div>
   </header>
 
-  <section class="wedding-content">
-    <div class="hello-world-section">
-      <h2>Hello World from our Wedding Page!</h2>
+  <section class="wedding-details">
+    <div class="detail-card">
+      <div class="paisley-border"></div>
+      <h2>🌸 Our Celebration</h2>
       <p>
-        Welcome to our wedding information page. This is where we'll share all
-        the details about our upcoming celebration.
+        We're excited to invite you to our wedding together in beautiful
+        Marquette, Michigan.
       </p>
     </div>
 
-    <div class="coming-soon">
-      <h3>More Information Coming Soon</h3>
-      <p>We're excited to share more details with you soon, including:</p>
-      <ul>
-        <li>📅 Date and Time</li>
-        <li>📍 Venue Information</li>
-        <li>🎊 Schedule of Events</li>
-        <li>🏨 Accommodation Suggestions</li>
-        <li>📝 RSVP Details</li>
-        <li>🎁 Registry Information</li>
-      </ul>
+    <div class="info-grid">
+      <div class="info-card date-card">
+        <div class="card-border-design"></div>
+        <h3>📅 When</h3>
+        <p class="highlight-text">Saturday, June 6th, 2026</p>
+        <p>More specific timing details coming soon!</p>
+      </div>
+
+      <div class="info-card location-card">
+        <div class="card-border-design"></div>
+        <h3>📍 Where</h3>
+        <p class="highlight-text">Marquette, Michigan</p>
+        <p>Reception will be held at the Northern Center</p>
+      </div>
+
+      <div class="info-card theme-card">
+        <div class="card-border-design"></div>
+        <h3>🎨 Theme</h3>
+        <p class="highlight-text">Indian-ish</p>
+        <p>A nod to Shamita's Indian-American heritage</p>
+      </div>
+    </div>
+
+    <div class="coming-soon-section">
+      <div class="ornate-header">
+        <span class="decorative-symbol">❋</span>
+        <h2>📋 More Information Coming Soon</h2>
+        <span class="decorative-symbol">❋</span>
+      </div>
+      <div class="info-list">
+        <div class="info-item">
+          <span class="icon">🕐</span>
+          <span class="text">Detailed Schedule & Timeline</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">🏛️</span>
+          <span class="text">Specific Venue Information</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">🏨</span>
+          <span class="text">Accommodation Recommendations</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">👕</span>
+          <span class="text">Dress Code & Attire Suggestions</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">📝</span>
+          <span class="text">RSVP Information</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">🎁</span>
+          <span class="text">Gift Registry Details</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">🍽️</span>
+          <span class="text">Menu & Dietary Information</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">🎵</span>
+          <span class="text">Music & Entertainment Details</span>
+        </div>
+      </div>
     </div>
 
     <div class="contact-section">
-      <h3>Questions?</h3>
+      <div class="lotus-design"></div>
+      <h3>💌 Questions?</h3>
       <p>
-        If you have any questions about the wedding, please don't hesitate to
-        reach out to us!
+        If you have any questions about our wedding celebration, please don't
+        hesitate to reach out to Paul or Shamita. We're so excited to celebrate
+        with you!
       </p>
     </div>
   </section>
@@ -47,122 +108,599 @@ permalink: /wedding/
 </div>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cinzel+Decorative:wght@400;700&family=Kalam:wght@300;400;700&display=swap");
+
   .wedding-page {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-      sans-serif;
+    font-family: "Cinzel", serif;
+    background: radial-gradient(
+        circle at 20% 80%,
+        rgba(241, 161, 130, 0.15) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(138, 51, 36, 0.15) 0%,
+        transparent 50%
+      ),
+      linear-gradient(45deg, #fdf8f5 0%, #fff9f6 50%, #fdf8f5 100%);
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .wedding-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 15c19.33 0 35 15.67 35 35S69.33 85 50 85 15 69.33 15 50s15.67-35 35-35zm0 5c-16.57 0-30 13.43-30 30s13.43 30 30 30 30-13.43 30-30-13.43-30-30-30z' fill='%23F1A182'/%3E%3Cpath d='M50 25c13.81 0 25 11.19 25 25S63.81 75 50 75 25 63.81 25 50s11.19-25 25-25zm0 10c-8.28 0-15 6.72-15 15s6.72 15 15 15 15-6.72 15-15-6.72-15-15-15z' fill='%238A3324'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: -1;
   }
 
   .wedding-header {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 50px;
+    padding: 60px 40px 50px;
+    background: linear-gradient(
+      135deg,
+      #f1a182 0%,
+      #d4af37 25%,
+      #8a3324 75%,
+      #6d2419 100%
+    );
     color: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(138, 51, 36, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 0 3px #d4af37,
+      0 0 0 6px rgba(212, 175, 55, 0.3);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(212, 175, 55, 0.8);
+  }
+
+  .wedding-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(212, 175, 55, 0.2) 0%,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 70% 70%,
+        rgba(255, 255, 255, 0.1) 0%,
+        transparent 30%
+      );
+    pointer-events: none;
+  }
+
+  .mandala-decoration {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .mandala-decoration.top {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, #d4af37 2px, transparent 2px),
+      conic-gradient(
+        from 0deg,
+        #d4af37 0deg 45deg,
+        transparent 45deg 90deg,
+        #d4af37 90deg 135deg,
+        transparent 135deg 180deg,
+        #d4af37 180deg 225deg,
+        transparent 225deg 270deg,
+        #d4af37 270deg 315deg,
+        transparent 315deg 360deg
+      );
+    background-size: 10px 10px, 100% 100%;
+  }
+
+  .mandala-decoration.bottom {
+    bottom: -15px;
+    right: 50%;
+    transform: translateX(50%);
+    background: radial-gradient(circle, #d4af37 2px, transparent 2px),
+      conic-gradient(
+        from 45deg,
+        #d4af37 0deg 45deg,
+        transparent 45deg 90deg,
+        #d4af37 90deg 135deg,
+        transparent 135deg 180deg,
+        #d4af37 180deg 225deg,
+        transparent 225deg 270deg,
+        #d4af37 270deg 315deg,
+        transparent 315deg 360deg
+      );
+    background-size: 10px 10px, 100% 100%;
   }
 
   .wedding-header h1 {
-    margin: 0 0 10px 0;
-    font-size: 2.5em;
+    margin: 20px 0 15px 0;
+    font-size: 3.5em;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+      0 0 10px rgba(212, 175, 55, 0.5);
+  }
+
+  .sanskrit-blessing {
+    font-family: "Kalam", cursive;
+    font-size: 1.8em;
+    color: #d4af37;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 3;
   }
 
   .wedding-subtitle {
-    font-size: 1.3em;
-    margin: 0;
-    opacity: 0.9;
+    font-size: 1.5em;
+    margin: 15px 0 25px 0;
+    opacity: 0.95;
+    font-style: italic;
+    position: relative;
+    z-index: 3;
+    font-family: "Cinzel", serif;
   }
 
-  .wedding-content {
+  .wedding-date {
+    position: relative;
+    z-index: 3;
+    margin-top: 20px;
+  }
+
+  .date-highlight {
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-family: "Cinzel Decorative", serif;
+    color: #d4af37;
+  }
+
+  .location {
+    display: block;
+    font-size: 1.3em;
+    opacity: 0.9;
+    font-family: "Cinzel", serif;
+  }
+
+  .wedding-details {
     margin: 40px 0;
   }
 
-  .hello-world-section {
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    border-left: 4px solid #667eea;
+  .detail-card {
+    background: linear-gradient(135deg, #f1a182, #f7c5a8),
+      url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10-10-4.5-10-10zm-10 0c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10 10 4.5 10 10z' fill='%23d4af37' fill-opacity='0.1'/%3E%3C/svg%3E");
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    color: #8a3324;
+    box-shadow: 0 8px 25px rgba(241, 161, 130, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border: 2px solid #d4af37;
+    position: relative;
+    overflow: hidden;
   }
 
-  .hello-world-section h2 {
-    color: #333;
+  .paisley-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: repeating-linear-gradient(
+      90deg,
+      #d4af37 0px,
+      #d4af37 8px,
+      transparent 8px,
+      transparent 16px
+    );
+  }
+
+  .detail-card h2 {
     margin-top: 0;
+    color: #8a3324;
+    font-size: 2em;
+    font-family: "Cinzel Decorative", serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(138, 51, 36, 0.3);
   }
 
-  .coming-soon {
-    margin: 30px 0;
+  .detail-card p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Cinzel", serif;
   }
 
-  .coming-soon h3 {
-    color: #333;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
   }
 
-  .coming-soon ul {
-    list-style: none;
-    padding: 0;
+  .info-card {
+    background: linear-gradient(135deg, #ffffff, #fefcfb),
+      url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.7 0 0 6.7 0 15s6.7 15 15 15 15-6.7 15-15S23.3 0 15 0zm0 3c6.6 0 12 5.4 12 12s-5.4 12-12 12S3 21.6 3 15 8.4 3 15 3z' fill='%23F1A182' fill-opacity='0.05'/%3E%3C/svg%3E");
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 2px solid #f1a182;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
   }
 
-  .coming-soon li {
-    padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
+  .card-border-design {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    pointer-events: none;
   }
 
-  .coming-soon li:last-child {
-    border-bottom: none;
+  .info-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
+      0 0 0 3px rgba(212, 175, 55, 0.3);
+  }
+
+  .info-card h3 {
+    margin-top: 0;
+    color: #8a3324;
+    font-size: 1.4em;
+    font-family: "Cinzel Decorative", serif;
+    text-align: center;
+  }
+
+  .highlight-text {
+    color: #8a3324;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 15px 0;
+    text-align: center;
+    font-family: "Cinzel", serif;
+  }
+
+  .photo-gallery-section {
+    background: linear-gradient(135deg, #fefcfb, #ffffff),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M30 30l15-15M30 30l-15-15M30 30l15 15M30 30l-15 15M30 30v-15M30 30v15M30 30h-15M30 30h15' stroke='%23d4af37' stroke-opacity='0.1' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 40px;
+    border-radius: 20px;
+    margin: 50px 0;
+    border: 3px solid #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+  }
+
+  .photo-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 3px solid #d4af37;
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, #ffffff, #fefcfb);
+  }
+
+  .photo-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25),
+      0 0 0 4px rgba(212, 175, 55, 0.4);
+  }
+
+  .wedding-photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+  }
+
+  .photo-item:hover .wedding-photo {
+    transform: scale(1.05);
+  }
+
+  .photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      to top,
+      rgba(138, 51, 36, 0.9) 0%,
+      rgba(138, 51, 36, 0.7) 50%,
+      transparent 100%
+    );
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+  }
+
+  .photo-item:hover .photo-overlay {
+    transform: translateY(0);
+  }
+
+  .photo-caption {
+    font-family: "Cinzel", serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: block;
+  }
+
+  .coming-soon-section {
+    background: linear-gradient(135deg, #fefcfb, #ffffff),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M30 30l15-15M30 30l-15-15M30 30l15 15M30 30l-15 15M30 30v-15M30 30v15M30 30h-15M30 30h15' stroke='%23F1A182' stroke-opacity='0.1' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 40px;
+    border-radius: 20px;
+    margin: 50px 0;
+    border: 3px solid #f1a182;
+    box-shadow: 0 10px 30px rgba(241, 161, 130, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .ornate-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .decorative-symbol {
+    font-size: 2em;
+    color: #d4af37;
+    margin: 0 20px;
+    text-shadow: 1px 1px 2px rgba(138, 51, 36, 0.3);
+  }
+
+  .coming-soon-section h2 {
+    color: #8a3324;
+    text-align: center;
+    margin: 0;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 1.8em;
+  }
+
+  .info-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #fefcfb);
+    border-radius: 12px;
+    border: 2px solid #f1a182;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .info-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(212, 175, 55, 0.1),
+      transparent
+    );
+    transition: left 0.4s ease;
+  }
+
+  .info-item:hover::before {
+    left: 100%;
+  }
+
+  .info-item:hover {
+    background: linear-gradient(135deg, #f1a182, #f7c5a8);
+    color: #8a3324;
+    transform: translateX(8px);
+    box-shadow: 0 5px 15px rgba(241, 161, 130, 0.4);
+  }
+
+  .info-item .icon {
+    font-size: 1.8em;
+    margin-right: 20px;
+    width: 40px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+
+  .info-item .text {
+    font-weight: 500;
+    font-family: "Cinzel", serif;
+    z-index: 2;
+    position: relative;
   }
 
   .contact-section {
-    background-color: #fff3cd;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ffeaa7;
-    margin-top: 30px;
+    background: linear-gradient(135deg, #8a3324, #a84033),
+      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 40c11.05 0 20-8.95 20-20S51.05 0 40 0 20 8.95 20 20s8.95 20 20 20zm0-5c8.28 0 15-6.72 15-15S48.28 5 40 5 25 11.72 25 20s6.72 15 15 15z' fill='%23d4af37' fill-opacity='0.1'/%3E%3C/svg%3E");
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 50px 0;
+    border: 3px solid #d4af37;
+    box-shadow: 0 15px 35px rgba(138, 51, 36, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lotus-design {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #d4af37 30%, transparent 30%);
+    border-radius: 50%;
+    border: 3px solid #d4af37;
   }
 
   .contact-section h3 {
     margin-top: 0;
-    color: #856404;
+    font-size: 1.8em;
+    font-family: "Cinzel Decorative", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .contact-section p {
     margin-bottom: 0;
-    color: #856404;
+    font-size: 1.2em;
+    line-height: 1.8;
+    font-family: "Cinzel", serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
 
   .navigation {
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
   }
 
   .back-link {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #667eea;
+    padding: 18px 35px;
+    background: linear-gradient(135deg, #8a3324, #a84033),
+      url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0l5 5-5 5V7H0V3h10V0z' fill='%23d4af37' fill-opacity='0.2'/%3E%3C/svg%3E");
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: "Cinzel", serif;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(138, 51, 36, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 2px solid #d4af37;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .back-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(212, 175, 55, 0.3),
+      transparent
+    );
+    transition: left 0.4s ease;
+  }
+
+  .back-link:hover::before {
+    left: 100%;
   }
 
   .back-link:hover {
-    background-color: #5a67d8;
+    background: linear-gradient(135deg, #a84033, #8a3324);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(138, 51, 36, 0.5),
+      0 0 0 3px rgba(212, 175, 55, 0.4);
     text-decoration: none;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .wedding-header h1 {
-      font-size: 2em;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    .sanskrit-blessing {
+      font-size: 1.4em;
     }
 
     .wedding-subtitle {
-      font-size: 1.1em;
+      font-size: 1.2em;
+    }
+
+    .date-highlight {
+      font-size: 1.6em;
+    }
+
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .info-list {
+      grid-template-columns: 1fr;
+    }
+
+    .mandala-decoration {
+      width: 60px;
+      height: 60px;
+    }
+
+    .ornate-header {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .decorative-symbol {
+      margin: 0;
+    }
+
+    .photo-gallery {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .wedding-photo {
+      height: 200px;
     }
   }
 </style>
