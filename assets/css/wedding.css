@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cinzel+Decorative:wght@400;700&family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cinzel+Decorative:wght@400;700&family=Kalam:wght@300;400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap");
 
 .wedding-page {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
   background: radial-gradient(
       circle at 20% 80%,
       rgba(241, 161, 130, 0.15) 0%,
@@ -144,13 +144,13 @@
 }
 
 .wedding-subtitle {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 15px 0 25px 0;
   opacity: 0.95;
   font-style: italic;
   position: relative;
   z-index: 3;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
 }
 
 .wedding-date {
@@ -173,7 +173,7 @@
   display: block;
   font-size: 1.3em;
   opacity: 0.9;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
 }
 
 .wedding-details {
@@ -223,7 +223,7 @@
   line-height: 1.8;
   margin-bottom: 0;
   text-align: center;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
 }
 
 .info-grid {
@@ -277,7 +277,7 @@
   font-size: 1.2em;
   margin: 15px 0;
   text-align: center;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
 }
 
 .photo-gallery-section {
@@ -349,8 +349,8 @@
 }
 
 .photo-caption {
-  font-family: "Cinzel", serif;
-  font-size: 1.1em;
+  font-family: "Crimson Text", serif;
+  font-size: 1.3em;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -376,7 +376,7 @@
   font-size: 1.2em;
   line-height: 1.8;
   color: #8a3324;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
   margin: 0;
 }
 
@@ -492,7 +492,7 @@
 
 .info-item .text {
   font-weight: 500;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
   z-index: 2;
   position: relative;
 }
@@ -537,7 +537,7 @@
   margin-bottom: 0;
   font-size: 1.2em;
   line-height: 1.8;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -556,7 +556,7 @@
   border-radius: 12px;
   font-weight: 600;
   font-size: 1.2em;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
   transition: all 0.4s ease;
   box-shadow: 0 8px 20px rgba(138, 51, 36, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -669,8 +669,8 @@
 
 .countdown-label {
   display: block;
-  font-size: 1.1em;
-  font-family: "Cinzel", serif;
+  font-size: 1.3em;
+  font-family: "Crimson Text", serif;
   color: #8a3324;
   font-weight: 600;
   text-transform: uppercase;
@@ -769,7 +769,7 @@
 .registry-intro {
   text-align: center;
   font-family: "Kalam", cursive;
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #8a3324;
   margin-bottom: 30px;
   line-height: 1.6;
@@ -828,7 +828,7 @@
 }
 
 .registry-details h4 {
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
   font-size: 1.4em;
   color: #8a3324;
   margin: 0 0 8px 0;
@@ -849,7 +849,7 @@
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 25px;
-  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
   font-weight: 600;
   font-size: 0.95em;
   box-shadow: 0 3px 8px rgba(138, 51, 36, 0.3);
