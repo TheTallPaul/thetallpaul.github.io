@@ -770,6 +770,11 @@
   .countdown-label {
     font-size: 1em;
   }
+
+  .color-theme-circle-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* Registry Section */
