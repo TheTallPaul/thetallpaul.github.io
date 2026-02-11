@@ -57,6 +57,53 @@ redirect_from:
         opacity: 0.9;
       }
 
+      .gallery-header a {
+        color: white;
+        text-decoration: underline;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
+      }
+
+      .gallery-header a:hover {
+        opacity: 1;
+      }
+
+      /* Tab Styles */
+      .season-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+      }
+
+      .season-tab {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        font-family: "Crimson Text", serif;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+
+      .season-tab:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-2px);
+      }
+
+      .season-tab.active {
+        background: rgba(255, 255, 255, 0.95);
+        color: #6d2419;
+        border-color: rgba(255, 255, 255, 0.95);
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
       .photo-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -248,6 +295,16 @@ redirect_from:
           font-size: 1rem;
         }
 
+        .season-tabs {
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+
+        .season-tab {
+          padding: 10px 20px;
+          font-size: 0.95rem;
+        }
+
         .photo-grid {
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           gap: 15px;
@@ -347,8 +404,18 @@ redirect_from:
     <div class="gallery-page">
       <div class="gallery-header">
         <h1>Our Engagement Photos</h1>
-        <p>Autumn Shoot</p>
-        <p><i>Photography by Krystian Knaga</i></p>
+        <div class="season-tabs">
+          <button class="season-tab active" onclick="switchSeason('winter', this)">
+            Winter Shoot
+          </button>
+          <button class="season-tab" onclick="switchSeason('autumn', this)">
+            Autumn Shoot
+          </button>
+        </div>
+        <p id="seasonTitle">Winter Shoot</p>
+        <p id="photographerCredit">
+          <i>Photography by <a href="https://emmooncreative.pixieset.com/" target="_blank" rel="noopener noreferrer">Emmoon Creative</a></i>
+        </p>
       </div>
 
       <div class="photo-grid" id="photoGrid">
@@ -377,7 +444,7 @@ redirect_from:
 
     <script>
       // Photo data
-      const photos = [
+      const autumnPhotos = [
         {
           src: "/assets/images/engagement_photos/IMG_2620.jpg",
           alt: "Engagement Photo 1",
@@ -452,14 +519,233 @@ redirect_from:
         },
       ];
 
+      const winterPhotos = [
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-10.jpg",
+          alt: "Winter Engagement Photo 1",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-100.jpg",
+          alt: "Winter Engagement Photo 2",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-101.jpg",
+          alt: "Winter Engagement Photo 3",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-103.jpg",
+          alt: "Winter Engagement Photo 4",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-107.jpg",
+          alt: "Winter Engagement Photo 5",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-109.jpg",
+          alt: "Winter Engagement Photo 6",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-111.jpg",
+          alt: "Winter Engagement Photo 7",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-114.jpg",
+          alt: "Winter Engagement Photo 8",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-119.jpg",
+          alt: "Winter Engagement Photo 9",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-12.jpg",
+          alt: "Winter Engagement Photo 10",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-124.jpg",
+          alt: "Winter Engagement Photo 11",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-127.jpg",
+          alt: "Winter Engagement Photo 12",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-129.jpg",
+          alt: "Winter Engagement Photo 13",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-14.jpg",
+          alt: "Winter Engagement Photo 14",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-145.jpg",
+          alt: "Winter Engagement Photo 15",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-148.jpg",
+          alt: "Winter Engagement Photo 16",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-15.jpg",
+          alt: "Winter Engagement Photo 17",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-150.jpg",
+          alt: "Winter Engagement Photo 18",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-18.jpg",
+          alt: "Winter Engagement Photo 19",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-19.jpg",
+          alt: "Winter Engagement Photo 20",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-26.jpg",
+          alt: "Winter Engagement Photo 21",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-27.jpg",
+          alt: "Winter Engagement Photo 22",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-32.jpg",
+          alt: "Winter Engagement Photo 23",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-35.jpg",
+          alt: "Winter Engagement Photo 24",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-39.jpg",
+          alt: "Winter Engagement Photo 25",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-43.jpg",
+          alt: "Winter Engagement Photo 26",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-45.jpg",
+          alt: "Winter Engagement Photo 27",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-47.jpg",
+          alt: "Winter Engagement Photo 28",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-48.jpg",
+          alt: "Winter Engagement Photo 29",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-55.jpg",
+          alt: "Winter Engagement Photo 30",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-56.jpg",
+          alt: "Winter Engagement Photo 31",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-58.jpg",
+          alt: "Winter Engagement Photo 32",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-64.jpg",
+          alt: "Winter Engagement Photo 33",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-68.jpg",
+          alt: "Winter Engagement Photo 34",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-75.jpg",
+          alt: "Winter Engagement Photo 35",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-80.jpg",
+          alt: "Winter Engagement Photo 36",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-90.jpg",
+          alt: "Winter Engagement Photo 37",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-95.jpg",
+          alt: "Winter Engagement Photo 38",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-96.jpg",
+          alt: "Winter Engagement Photo 39",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement-98.jpg",
+          alt: "Winter Engagement Photo 40",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement2-14.jpg",
+          alt: "Winter Engagement Photo 41",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement2-16.jpg",
+          alt: "Winter Engagement Photo 42",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement2-2.jpg",
+          alt: "Winter Engagement Photo 43",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement2-8.jpg",
+          alt: "Winter Engagement Photo 44",
+        },
+        {
+          src: "/assets/images/engagement_photos_winter/260209Shamita+PaulEngagement2.jpg",
+          alt: "Winter Engagement Photo 45",
+        },
+      ];
+
+      let photos = winterPhotos; // Current photo set
+      let currentSeason = "winter";
       let currentImageIndex = 0;
       const modal = document.getElementById("photoModal");
       const modalImage = document.getElementById("modalImage");
       const modalCounter = document.getElementById("modalCounter");
 
+      // Switch between seasons
+      function switchSeason(season, buttonElement) {
+        // Update active tab
+        const tabs = document.querySelectorAll(".season-tab");
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        buttonElement.classList.add("active");
+
+        // Update current season and photos
+        currentSeason = season;
+        photos = season === "autumn" ? autumnPhotos : winterPhotos;
+        currentImageIndex = 0;
+
+        // Update header
+        const seasonTitle = document.getElementById("seasonTitle");
+        const photographerCredit = document.getElementById("photographerCredit");
+        
+        if (season === "autumn") {
+          seasonTitle.textContent = "Autumn Shoot";
+          photographerCredit.innerHTML = '<i>Photography by Krystian Knaga</i>';
+        } else {
+          seasonTitle.textContent = "Winter Shoot";
+          photographerCredit.innerHTML = '<i>Photography by <a href="https://emmooncreative.pixieset.com/" target="_blank" rel="noopener noreferrer">Emmoon Creative</a></i>';
+        }
+
+        // Reload photos
+        loadPhotos();
+
+        // Close modal if open
+        if (modal.classList.contains("active")) {
+          closeModal();
+        }
+      }
+
       // Load photos into grid
       function loadPhotos() {
         const grid = document.getElementById("photoGrid");
+        grid.innerHTML = ""; // Clear existing photos
 
         photos.forEach((photo, index) => {
           const photoItem = document.createElement("div");
