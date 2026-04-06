@@ -5,13 +5,64 @@ permalink: /wedding/travel/
 ---
 
 <link rel="stylesheet" href="/assets/css/wedding.css?v=1" />
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .toc {
+    background: linear-gradient(135deg, #fefcfb, #ffffff);
+    padding: 18px 22px;
+    border-radius: 16px;
+    margin: -28px 0 35px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+  .toc-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 18px;
+  }
+  .toc-links a {
+    color: #8a3324;
+    text-decoration: none;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 1.05em;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+  }
+  .toc-links a:hover,
+  .toc-links a:focus-visible {
+    color: #d4af37;
+    border-bottom-color: #8a3324;
+    transform: translateY(-1px);
+  }
+  .toc-links a:focus-visible {
+    outline: 2px solid rgba(0, 0, 0, 0.35);
+    outline-offset: 2px;
+  }
+</style>
 <div class="wedding-page">
   <header class="wedding-header">
     <h1>Travel Guide</h1>
     <p class="wedding-subtitle">Hotels, Restaurants, and Things to Do</p>
   </header>
+  <nav class="toc" aria-label="Travel guide table of contents">
+    <ul class="toc-links">
+      <li><a href="#where-to-stay">Where to Stay</a></li>
+      <li><a href="#things-to-do">Things to Do</a></li>
+      <li><a href="#where-to-eat">Where to Eat</a></li>
+      <li><a href="#weather">Weather</a></li>
+      <li><a href="#extending-your-trip">Extending Your Trip</a></li>
+    </ul>
+  </nav>
   <section class="wedding-details">
-    <div class="detail-card">
+    <!-- <div class="detail-card">
       <div class="paisley-border"></div>
       <h2>Getting to Marquette</h2>
       <p>
@@ -124,9 +175,9 @@ permalink: /wedding/travel/
           >
         </p>
       </div>
-    </div>
+    </div> -->
 
-    <div class="travel-section">
+    <div class="travel-section" id="where-to-stay">
       <div class="ornate-header">
         <span class="decorative-symbol">🏨</span>
         <h2>Where to Stay</h2>
@@ -178,7 +229,7 @@ permalink: /wedding/travel/
         </div>
       </div>
     </div>
-    <div class="travel-section">
+    <div class="travel-section" id="things-to-do">
       <div class="ornate-header">
         <span class="decorative-symbol">🎯</span>
         <h2>Things to Do</h2>
@@ -258,7 +309,7 @@ permalink: /wedding/travel/
         </div>
       </div>
     </div>
-    <div class="travel-section">
+    <div class="travel-section" id="where-to-eat">
       <div class="ornate-header">
         <span class="decorative-symbol">🍽️</span>
         <h2>Where to Eat</h2>
@@ -312,7 +363,7 @@ permalink: /wedding/travel/
       </div>
     </div>
 
-    <div class="travel-section">
+    <div class="travel-section" id="weather">
       <div class="ornate-header">
         <span class="decorative-symbol">🌤️</span>
         <h2>Weather</h2>
@@ -344,7 +395,7 @@ permalink: /wedding/travel/
       </div>
     </div>
 
-    <div class="travel-section">
+    <div class="travel-section" id="extending-your-trip">
       <div class="ornate-header">
         <span class="decorative-symbol">🚗</span>
         <h2>Extending Your Trip</h2>
