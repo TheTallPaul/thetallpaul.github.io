@@ -21,7 +21,14 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* Header — reset theme's fixed sidebar positioning on wide viewports */
+
+.homepage .site-header,
+.homepage .site-footer {
+  position: static;
+  float: none;
+  width: auto;
+}
 
 .site-header {
   margin-bottom: 3rem;

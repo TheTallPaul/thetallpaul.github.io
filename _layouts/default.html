@@ -23,7 +23,7 @@
     </div>
 
     <style>
-      /* Minimal reset to avoid conflicts with custom themes */
+      /* Reset jekyll-theme-minimal sidebar layout on wide viewports */
       .wrapper {
         width: 100%;
         margin: 0;
@@ -34,6 +34,13 @@
         float: none;
         padding: 0;
         margin: 0;
+      }
+
+      header,
+      footer {
+        position: static;
+        float: none;
+        width: auto;
       }
     </style>
   </body>
