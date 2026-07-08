@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/assets/css/blog.css?v=1" />
+
+<article class="blog-page blog-post">
+  <header class="blog-header">
+    <nav class="blog-nav" aria-label="Blog navigation">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <h1>{{ page.title }}</h1>
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%B %d, %Y" }}
+    </time>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="blog-footer">
+    <a href="/blog/" class="back-link">← All posts</a>
+  </footer>
+</article>

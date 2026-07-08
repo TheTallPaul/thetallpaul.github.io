@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="/assets/css/homepage.css?v=4" />
+<link rel="stylesheet" href="/assets/css/homepage.css?v=6" />
 
 <div class="homepage">
   <header class="site-header">
@@ -54,8 +54,8 @@ layout: default
     <section class="intro-section">
       <div class="photo-grid">
         <img
-          src="assets/images/paul_2.jpg"
-          alt="Paul Lantow"
+          src="assets/images/paul_shamita.jpg"
+          alt="Paul and Shamita Lantow"
           class="profile-photo"
         />
         <img
@@ -83,12 +83,32 @@ layout: default
             interests, projects, and life updates.
           </p>
         </div>
+
+        {% if site.posts.size > 0 %}
+        {% assign latest = site.posts.first %}
+        <section class="latest-post" aria-label="Latest blog post">
+          <h3>Latest post</h3>
+          <a href="{{ latest.url | relative_url }}" class="latest-post-link">
+            <span class="latest-post-title">{{ latest.title }}</span>
+            <time datetime="{{ latest.date | date_to_xmlschema }}">
+              {{ latest.date | date: "%B %d, %Y" }}
+            </time>
+            {% if latest.excerpt %}
+            <p class="latest-post-excerpt">
+              {{ latest.excerpt | strip_html | truncate: 160 }}
+            </p>
+            {% endif %}
+          </a>
+          <a href="/blog/" class="latest-post-all">All posts →</a>
+        </section>
+        {% endif %}
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <nav class="site-links" aria-label="Site pages">
+      <a href="/blog/">Blog</a>
       <a href="/wedding">Wedding Information</a>
     </nav>
   </footer>

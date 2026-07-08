@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<link rel="stylesheet" href="/assets/css/blog.css?v=1" />
+
+<div class="blog-page blog-index">
+  <header class="blog-header">
+    <nav class="blog-nav" aria-label="Blog navigation">
+      <a href="/">Home</a>
+      <span class="nav-current">Blog</span>
+    </nav>
+    <h1>Blog</h1>
+    <p class="blog-intro">Thoughts, projects, and updates.</p>
+  </header>
+
+  {% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-preview">
+      <a href="{{ post.url | relative_url }}" class="post-preview-link">
+        <h2>{{ post.title }}</h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%B %d, %Y" }}
+        </time>
+        {% if post.excerpt %}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+        {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-state">No posts yet — check back soon.</p>
+  {% endif %}
+</div>

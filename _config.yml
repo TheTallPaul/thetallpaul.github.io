@@ -1,3 +1,16 @@
 theme: jekyll-theme-minimal
 title: Paul Lantow's homepage
-description: For all things Paul Lantow
+description: The gateway to the Lantow Network.
+url: "https://lantow.net"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Blog posts live in _posts/ and publish at /blog/YYYY/MM/DD/title/
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: "<!--more-->"
+
+plugins:
+  - jekyll-redirect-from
