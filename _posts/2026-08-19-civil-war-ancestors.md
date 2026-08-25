@@ -95,6 +95,11 @@ In Stockton, Kansas, he joined the local chapter of the Grand Army of the Republ
 At some point, he seems to have switched away from farming.
 By 1900, he was working as a deputy county official and in 1910, at age 67, he was a coal dealer for Stockton, Kansas.
 
+<figure>
+  <img src="/assets/images/blog/will_stewart_pension.png" alt="William Stewart Pension" />
+  <figcaption>Pension record for William Stewart.</figcaption>
+</figure>
+
 His military service, while unexciting (his company never seems to have left Illinois), paid off quite well later on in life.
 In 1907, Civil War veterans were eligible for pensions simply for being old.
 By 1912, William would have been receiving $30/month ($1,022 today) and by his death in 1924, would be getting $50/month ($976 today).
