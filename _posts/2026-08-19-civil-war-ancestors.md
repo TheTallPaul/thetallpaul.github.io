@@ -88,7 +88,7 @@ Somewhere in 1877-1878 though, he moved his family to a farm in North Central Ka
 </figure>
 
 
-In Stockton, Kansas, he joined the local chapter of the Grand Army of the Republic, a Civil War veteran society.
+In Stockton, Kansas, he joined the local post of the Grand Army of the Republic, a Civil War veteran society.
 
 ![GAR roster Stockton, Kansas](/assets/images/blog/gar_will_stewart.jpg)
 
