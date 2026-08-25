@@ -8,7 +8,9 @@ It really fascinates me because it seems like such a crossover point between the
 It marks when our government shifted from a true federal system to a national government.
 And it is the only war where I have ancestors who fought on both sides of the conflict.
 
-I decided to conduct a deep-dive into these ancestors and see not just their service record, but also  
+With my personal interest high, I decided to conduct a deep-dive into two ancestors who fought on opposite sides (both in the Western Theater) and see not just their service record, but also their lives before and after the war.
+As I'll touch on in the next post, it is near-indisputable that the two came within 100 miles of each other, there is a small chance that the two were within a few miles of each other, and there exists a tiny chance the two interacted directly with each other.
+
 This post is about my maternal great-great-great-grandfather, William Stewart, who served in the Union Army with the 42nd Wisconsin.
 
 ## Genealogy
@@ -30,7 +32,7 @@ Later, they moved further west to the beautiful Driftless Region of Wisconsin, s
 When war broke out in April 1861, William was sixteen.
 While some teenagers lied about their age to enlist, it appears William was content to keep working on the family farm for the next several years, as war waged on to the south.
 
-In 1864, two important events occured in William's life.
+In 1864, two important events occurred in William's life.
 
 First, on May 8th, 1864, he married a woman on the other side of the Wisconsin River, Julia Ann Fulcomer (born October 24th, 1846).
 She was born with a twin sister in Fairfield, Ohio to parents from York, Pennsylvania.
@@ -70,7 +72,7 @@ After a month, Company K, now under the control of  Lieut.-Col., W. Wallace Botk
 There they took on the responsibility of capturing Union deserters and forwarding draftees to rendezvous points. 
 They then returned to Cairo and remained there through June 1865, by which point all Confederate armies had surrendered.
 They were mustered out of Milwaukee on June 20th, 1865, having seen no fighting.
-58 out of the aproximately 1,000 men in the regiment died of disease during their service.
+58 out of the approximately 1,000 men in the regiment died of disease during their service.
 
 From Milwaukee, William likely would've taken the railroad to Spring Green and walked roughly twelve miles home to Troy. 
 He must've been very eager to see his wife, as a little over nine months later, his first son, Alexander was born!
